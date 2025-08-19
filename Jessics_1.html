@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #141414;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        
+        .profile-card {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            max-width: 384px;
+            width: 100%;
+        }
+        
+        .avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            overflow: hidden;
+        }
+        
+        .avatar img {
+           width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+        
+    
+        .avatar-placeholder {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .location {
+            font-size: 14px;
+            color: #c5f82a;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .bio {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .social-link {
+            display: block;
+            background-color: #333333;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        
+        .social-link:hover {
+            background-color: #c5f82a;
+            color: #333333;
+        }
+        
+        .social-link:focus {
+            outline: none;
+            background-color: #c5f82a;
+            color: #333333;
+        }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 24px;
+                margin: 16px;
+            }
+            
+            .avatar {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+            
+            .name {
+                font-size: 22px;
+            }
+            
+            .social-links {
+                gap: 14px;
+            }
+            
+            .social-link {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar">
+            <div class="Jessica" ></div>
+            <img src="jessica.jpeg" alt="Jessica Randall">
+        </div>
+        <h1 class="name">Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="bio">"Front-end developer and avid reader."</p>
+        
+        <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Frontend Mentor</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
